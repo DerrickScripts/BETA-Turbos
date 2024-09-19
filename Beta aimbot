@@ -176,3 +176,13 @@ end)
 -- Disable aim assist when "E" is released
 UserInputService.InputEnded:Connect(function(input)
     if input.KeyCode == Enum.Key
+
+print("Settings applied:")
+print("FOV Radius: ", _G.Settings.fovRadius)
+print("FOV Circle Color: ", _G.Settings.fovCircleColor)
+print("FOV Circle Transparency: ", _G.Settings.fovCircleTransparency)
+print("Lock-On Text Color: ", _G.Settings.lockOnTextColor)
+print("Lock-On Text Size: ", _G.Settings.lockOnTextSize)
+print("Wall Check Enabled: ", _G.Settings.wallCheckEnabled)
+print("GUI On Respawn: ", _G.Settings.guiOnRespawn)
+print("Hit Parts: ", table.concat(_G.Settings.hitParts, ", "))
